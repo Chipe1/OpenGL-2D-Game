@@ -1,0 +1,8 @@
+#include "anim.h"
+
+Anim *Anim_create(Vec3 pos, float length){
+	Anim *toret=(Anim *)malloc(sizeof(Anim));
+	toret->start=pos;
+	toret->length=length;
+	toret->time=0;
+}
